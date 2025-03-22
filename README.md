@@ -1,2 +1,6 @@
 # PlanktonDetection
 A project to spend free time while learning about the ResNet architecture and the application of Deep Learning in microorganisms, particularly plankton.
+
+
+**Abstract**  
+This project develops an automatic plankton classification model using Deep Learning based on the ResNet-101 architecture pre-trained on ImageNet, with fine-tuning applied to a combined dataset of 3,144 images spanning 19 marine plankton species (sourced from internet images, lecture materials, and the WHOI Plankton Dataset). The model was modified by replacing the final fully connected layer to output 19 classes, trained using the Adam optimizer (learning rate = 0.001) with a StepLR scheduler (reducing the learning rate every 7 epochs), and achieved accuracies of 99.55% (training), 88.17% (validation), and 99.15% (testing). The results demonstrate the model’s ability to identify complex morphological patterns of plankton, such as diatoms and dinoflagellates, while overcoming the limitations of slow and subjective manual classification. The implementation of this model holds potential for efficiently supporting marine ecosystem health monitoring, environmental change detection, and biodiversity studies.
